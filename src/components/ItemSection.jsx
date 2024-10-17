@@ -5,9 +5,9 @@ import Button from "./Button";
 const ItemSection = (props) => {
   return (
     <div>
-      <Label>Item:{props.item}</Label>
-      <Label>Price:{props.price}</Label>
-      <Label>Date:{props.date}</Label>
+      <Label>{props.item}</Label>
+      <Label>{props.price}</Label>
+      <Label>{props.date}</Label>
       <Button onClick={props.handleDelete}>Delete</Button>
     </div>
   );

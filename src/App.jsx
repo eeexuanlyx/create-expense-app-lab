@@ -37,8 +37,7 @@ const App = () => {
   };
 
   return (
-    <>
-      <h2>Input Form</h2>
+    <div className="final">
       <InputForm
         handleItem={handleItem}
         handlePrice={handlePrice}
@@ -48,7 +47,7 @@ const App = () => {
         date={inputDate}
         price={inputPrice}
       />
-      <h2>Form</h2>
+
       <Form
         expenses={expenses}
         item={inputItem}
@@ -56,7 +55,7 @@ const App = () => {
         price={inputPrice}
         handleDelete={handleDelete}
       />
-    </>
+    </div>
   );
 };
 

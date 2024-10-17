@@ -5,7 +5,7 @@ import Button from "./Button";
 
 const InputForm = (props) => {
   return (
-    <>
+    <div className="inputform">
       <div>
         <div>
           <Label>Item</Label>
@@ -21,7 +21,7 @@ const InputForm = (props) => {
         </div>
       </div>
       <Button onClick={props.handleExpenses}>Submit</Button>
-    </>
+    </div>
   );
 };
 

@@ -3,15 +3,17 @@ import ItemSection from "./ItemSection";
 const Form = (props) => {
   return (
     <>
-      <div className="row">
+      <div className="inputform">
         {props.expenses.map((expense, idx) => (
-          <ItemSection
-            key={idx}
-            item={expense.item}
-            price={expense.price}
-            date={expense.date}
-            handleDelete={props.handleDelete}
-          />
+          <div className="inputedform">
+            <ItemSection
+              key={idx}
+              item={expense.item}
+              price={expense.price}
+              date={expense.date}
+              handleDelete={props.handleDelete}
+            />
+          </div>
         ))}
       </div>
     </>

@@ -10,7 +10,7 @@ html {
 
 body {
   margin: 0;
-  background-color: rgb(216, 212, 212);
+  background-color: rgb(255, 255, 255);
   color: black;
 }
 
@@ -32,4 +32,33 @@ body {
   border: 3px solid rgb(65, 80, 65);
   padding: 5px;
   margin: 10px;
+}
+
+.container1 {
+  border: 2px solid black;
+}
+
+.col-md-5 {
+  background-color: rgb(195, 214, 241);
+  border: 3px solid rgb(16, 70, 150);
+  padding: 5px;
+}
+
+.inputform {
+  border: 3px solid black;
+  padding: 5px;
+  margin: 5px;
+}
+
+.inputedform {
+  border: 3px solid rgb(66, 32, 108);
+  padding: 5px;
+  margin: 5px;
+  background-color: rgb(211, 181, 220);
+}
+
+.final {
+  border: 3px solid black;
+  padding: 5px;
+  margin: 5px;
 }
