@@ -25,6 +25,8 @@ body {
 .button {
   background-color: orange;
   border: 2px solid orangered;
+  padding: 5px;
+  margin: 5px;
 }
 
 .label {

@@ -7,8 +7,9 @@ import "./index.css";
 const App = () => {
   const [inputItem, setInputItem] = useState("");
   const [inputPrice, setInputPrice] = useState("");
-  const [inputDate, setInputDate] = useState("");
   const [expenses, setExpenses] = useState([]);
+  const currentDate = new Date().toISOString().split("T")[0];
+  const [inputDate, setInputDate] = useState(currentDate);
 
   const handleExpenses = () => {
     setExpenses((prevExpenses) => [
@@ -17,7 +18,7 @@ const App = () => {
     ]);
     setInputItem("");
     setInputPrice("");
-    setInputDate("");
+    setInputDate(currentDate);
   };
 
   const handleDelete = (idx) => {
