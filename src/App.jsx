@@ -20,6 +20,10 @@ const App = () => {
     setInputDate("");
   };
 
+  const handleDelete = (idx) => {
+    setExpenses((prevExpenses) => prevExpenses.toSpliced(idx, 1));
+  };
+
   const handleItem = (event) => {
     setInputItem(event.target.value);
   };
@@ -50,6 +54,7 @@ const App = () => {
         item={inputItem}
         date={inputDate}
         price={inputPrice}
+        handleDelete={handleDelete}
       />
     </>
   );

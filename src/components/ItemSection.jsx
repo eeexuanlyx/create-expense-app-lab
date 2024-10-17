@@ -8,7 +8,6 @@ const ItemSection = (props) => {
       <Label>Item:{props.item}</Label>
       <Label>Price:{props.price}</Label>
       <Label>Date:{props.date}</Label>
-      <Button>Delete</Button>
     </div>
   );
 };
