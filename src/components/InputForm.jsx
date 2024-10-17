@@ -5,21 +5,23 @@ import Button from "./Button";
 
 const InputForm = (props) => {
   return (
-    <div className="row">
+    <>
       <div>
-        <Label>Item</Label>
-        <Input handle={props.handleItem} labelName={props.item} />
-      </div>
-      <div>
-        <Label>Price</Label>
-        <Input handle={props.handlePrice} labelName={props.price} />
-      </div>
-      <div>
-        <Label>Date</Label>
-        <Input handle={props.handleDate} labelName={props.date} />
+        <div>
+          <Label>Item</Label>
+          <Input handle={props.handleItem} labelName={props.item} />
+        </div>
+        <div>
+          <Label>Price</Label>
+          <Input handle={props.handlePrice} labelName={props.price} />
+        </div>
+        <div>
+          <Label>Date</Label>
+          <Input handle={props.handleDate} labelName={props.date} />
+        </div>
       </div>
       <Button onClick={props.handleExpenses}>Submit</Button>
-    </div>
+    </>
   );
 };
 

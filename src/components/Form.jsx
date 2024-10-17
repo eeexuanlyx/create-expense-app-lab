@@ -1,6 +1,5 @@
 import React from "react";
 import ItemSection from "./ItemSection";
-import Button from "./Button";
 const Form = (props) => {
   return (
     <>
@@ -11,10 +10,10 @@ const Form = (props) => {
             item={expense.item}
             price={expense.price}
             date={expense.date}
+            handleDelete={props.handleDelete}
           />
         ))}
       </div>
-      <Button onClick={props.handleDelete}>Delete</Button>
     </>
   );
 };
